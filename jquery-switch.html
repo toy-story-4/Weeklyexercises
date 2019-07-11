@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> National Park </title>
+    <style>
+        dt{
+            background-color: #7CB243;
+            padding:10px;
+            width: 600px;
+            margin-top: 10px;
+        }
+        dd{
+            width: 500px;
+            padding:10px;
+        }
+        .pic>img{
+            width: 300px;
+            height: 300px;
+            border: 2px solid darkgrey;
+            display: flex;
+            margin-left: 100px;
+        }
+        .btn-switch{
+            margin-left: 225px;
+            margin-top: 20px;
+        }
+        .container{
+            display: flex;
+            margin: auto;
+        }
+        #second-ask{
+            color: red;
+            text-align: center;
+            font-weight: bold;
+            font-size: 100px;
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+    <h1>Would you like to sign up for our newsletter?</h1>
+    <span><button id="do-not-show">X</button></span>
+</div>
+
+<h1>Frequently Asked Questions</h1>
+<dl>
+    <dt>How old is the National Park System?</dt>
+    <dd class="invisible">
+        The National Park Service was created by an act signed by President Woodrow Wilson on August 25, 1916. Yellowstone National Park was established by an act signed by President Ulysses S. Grant on March 1, 1872, as the nation's first national park. View the National Park System timeline.
+    </dd>
+    <dt>What is the origin of the National Park Service arrowhead?</dt>
+    <dd class="invisible">
+        The arrowhead was authorized as the official National Park Service emblem by the Secretary of the Interior on July 20, 1951. The components of the arrowhead may have been inspired by key attributes of the National Park System, with the sequoia tree and bison representing vegetation and wildlife, the mountains and water representing scenic and recreational values, and the arrowhead itself representing historical and archeological values. Read more about the history of the arrowhead and other elements of NPS visual design.
+    </dd>
+    <dt>How many areas are in the National Park System?</dt>
+    <dd class="invisible">
+        Total recreation visitors to the national parks in 2018: 318,211,833.
+    </dd>
+    <dt>How many people visit the national parks?</dt>
+    <dd class="invisible">
+        Total recreation visitors to the national parks in 2018: 318,211,833.
+    </dd>
+    <dt>How do I obtain a park entrance pass?</dt>
+    <dd class="invisible">
+        Fewer than one-third of the national parks charge entrance fees. You can obtain park entrance passes by visiting a park site that charges an entrance fee. Entrance fee sites have passes available; we recommend calling a park prior to your visit. (See the park search to locate a specific park.) There are a number of entrance passes available, including park-specific passes as well as passes that offer entrance to more than 2,000 federal recreation sites in addition to the national parks (Annual, Military, Senior, 4th Grade, Access, and Volunteer passes). Learn more about the America the Beautiful - The National Parks and Federal Recreational Lands Pass.
+    </dd>
+    <dt>How do I reserve a tour in a park?</dt>
+    <dd class="invisible">
+        You can book some park tours through Recreation.gov such as WWII Valor in the Pacific (Pearl Harbor), many Mammoth Cave National Park cave tours, Independence National Historical Park tours, and more. Not all parks participate in this reservation service. For more information on tours offered at a specific park, please see the park search.
+    </dd>
+    <dt>Can I bring my pet to a national park?</dt>
+    <dd class="invisible">
+        Some national parks welcome pets—in developed areas, on many trails and campgrounds, and in some lodging facilities. Learn more about pets in parks.
+    </dd>
+    <dt>Can I bring my service dog to a national park?</dt>
+    <dd class="invisible">
+        Yes, service dogs are legally permitted anywhere in a park that visitors can go. Learn more about service animals in national parks, including the difference between service animals and emotional support animals.
+    </dd>
+    <dt>What do I need to know about driving off road in national parks?</dt>
+    <dd class="invisible">
+        Before you head out, check with the national parks that you intend to visit. In many national parks, off-road driving is illegal. Where off-road driving is allowed, the National Park Service regulates it.
+    </dd>
+    <dt>How do I apply for a job with the National Park Service?</dt>
+    <dd class="invisible">
+        National Park Service jobs, including both permanent and seasonal positions, are listed on USAJOBs. Learn more about working for us, including opportunities for students and volunteers and tips for applying for jobs.
+    </dd>
+</dl>
+
+<button class="yellow">Click me</button>
+
+<h2>Parks List</h2>
+<h3 class="park-list">Big Bend National Park</h3>
+<ul id="big-bend" class="park-data">
+    <li>Big Bend National Park is considered to be the largest Chihuahuan Desert protected region in the country.</li>
+    <li>There are more than 3600 species of insects found in Big Bend National Park.</li>
+    <li>There are water pools, mountains, desert, rivers, waterfalls, and forest within Big Bend National Park.</li>
+    <li>Visitors to Big Bend National Park can cycle, hike, take day trips hiking though the park, embark on river trips, or even drive through the park enjoying the sites.</li>
+</ul>
+<h3 class="park-list">Dinosaur Valley State Park</h3>
+<ul id="dinosaur-park" class="park-data">
+    <li>Around 113 million years ago, this area was at the edge of an advancing and retreating sea.</li>
+    <li>Many plants of the Edwards Plateau grow in the upland areas of the park. These include Ashe juniper, live oak, Texas red oak and Texas ash, with some post oak and mesquite, along with various grasses and shrubs.</li>
+    <li>Birders can see many species of both resident and migrant birds, including wild turkeys, golden-cheeked warblers and black-capped vireos</li>
+    <li>For many years, scientists thought the brachiosaur Pleurocoelus made the sauropod tracks. But new bones found nearby in 1996 changed their minds</li>
+</ul>
+<h3 class="park-list">Guadalupe Mountains National Park</h3>
+<ul id="mountains-park" class="park-data">
+    <li>The highest point in Texas is also the highest point of the Guadalupe Mountains. This is Guadalupe Peak, sitting at 8,751 feet.</li>
+    <li>There are 16 different species of bats found in Guadalupe National Park.</li>
+    <li>The hottest recorded temperature in Guadalupe National Park was 105 degrees Fahrenheit, in 1994.</li>
+    <li>When Guadalupe National Park opened in 1971 there were just over 27,000 visitors. In 2012 there were 159,360 visitors to the park.</li>
+</ul>
+
+
+
+<h3>Picture Frame</h3>
+<div class="container">
+    <div class="row1 pic" >
+        <img src="img/bigbend.jpeg" id="pic-left" >
+        <button class="btn-switch" id="switch1">Switch</button>
+    </div>
+    <div class="row2 pic">
+        <img src="img/dino.jpeg" id="pic-center">
+        <button class="btn-switch" id="switch2">Switch</button>
+    </div>
+    <div class="row3 pic">
+        <img src="img/mountain.jpeg" id="pic-right" >
+        <button class="btn-switch" id="switch3">Switch</button>
+    </div>
+</div>
+<h2 id="second-ask">REGISTER THIS WEBSITE</h2>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+
+        $("dd").hide();
+
+        $("dt").click(function () {
+            console.log("clicked")
+            $(this).next().toggle();
+        });
+
+        $(".yellow").click(function(){
+            $("li:last-child").css("background-color", "yellow")
+            $("li:nth-child(3)").css("background-color", "lightgrey")
+            // $(".park-data").each(function (){
+            //     $(this).children().last().css("background-color","yellow")
+            //
+            // })
+
+
+        });
+
+        $(".park-list").click(function () {
+            $(".park-data").children().css("font-weight","bold")
+        });
+        $("li").click(function(){
+            $(this).parent().children().first().css("color","blue")
+        });
+
+        $("#switch1").click(function(){
+            var imgLeft = $("#pic-left").attr("src");
+            var imgCenter = $("#pic-center").attr('src');
+            $("#pic-left").attr("src",imgCenter);
+            $("#pic-center").attr("src",imgLeft)
+
+        });
+        $("#switch3").click(function(){
+            var imgRight = $("#pic-right").attr('src');
+            var imgCenter = $("#pic-center").attr('src');
+            $("#pic-right").attr("src",imgCenter);
+            $("#pic-center").attr("src",imgRight);
+
+        });
+
+
+        $("#switch2").click(function () {
+            var randomNumber= Math.floor(Math.random()*2);
+            var imgRight = $("#pic-right").attr('src');
+            var imgLeft = $("#pic-left").attr("src");
+            var imgCenter = $("#pic-center").attr('src');
+            if(randomNumber===0){
+                $("#pic-center").attr("src",imgLeft)
+                $("#pic-left").attr("src",imgCenter)
+            }else{
+                $("#pic-center").attr("src",imgRight)
+                $("#pic-right").attr("src",imgCenter)
+            }
+        });
+
+
+
+
+
+
+
+        $("#do-not-show").click(function () {
+            $("div").hide();
+        });
+        $("h3").click(function(){
+            $("ul").slideToggle(500);
+        });
+
+
+        $("#second-ask").hide();
+        $('#second-ask').delay(8000).fadeIn().delay(8000).fadeOut();
+
+        // vanilla JS
+        //     setInterval(function () {
+        //         $("#second-ask").fadeIn();
+        //     },2000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    })
+
+</script>
+
+
+
+
+
+<!--    <script src="js/jquery.js"></script>-->
+</body>
+</html>
+</body>
+</html>
