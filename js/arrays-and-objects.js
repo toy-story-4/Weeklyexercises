@@ -47,4 +47,24 @@ Example input: ["fred", true, 5, 3] Example output: [3, 5]*/
     getOlder(dogs);
     console.log(dogs);
 
+    //from JS Hero
+    /*Write a function addWithSurcharge that adds two amounts with surcharge. For each amount less than or equal to 10, the surcharge is 1. For each amount greater than 10 and less than or equal to 20, the surcharge is 2. For each amount greater than 20, the surcharge is 3. The call addWithSurcharge(10, 30) should return 44.*/
+    function addWithSurcharge(a, b){
+        var arr = [a,b];
+        var aggregator = 0;
+        arr.forEach(function(num){
+            aggregator += num;
+            if ( num > 20) {
+                aggregator += 3
+            } else if (num <= 20 && num > 10){
+                aggregator += 2
+            } else if (num <= 10) {
+                aggregator += 1;
+            }
+        });
+        return aggregator;
+    }
+
+
+
 })();
