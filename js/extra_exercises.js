@@ -5,6 +5,8 @@ while(countLetters.length === 0){
 alert(countLetters + " has " + countLetters.length + " total characters");
 
 
+var theNoun = prompt("Enter a noun");
+var theVerb = prompt("Enter a verb");
+var theAdverb = prompt("Enter an Adverb");
 
-
-console.log(countLetters);
+alert("I saw you " + theVerb + " the " +  theNoun + " " + theAdverb + " last night!")
