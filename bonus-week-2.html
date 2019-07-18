@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pod Week 2</title>
+</head>
+<body>
+<script>
+    // Rewrite the function assigned to the variable magic which returns a new Date() to use arrow function syntax. Also make sure nothing is defined using the keyword var.
+    const magic = () => {
+        "use strict";
+        return new Date();
+    };
+    //Just like a normal function, you can pass arguments into arrow functions.
+
+    // doubles input value and returns it
+    // const doubler = (item) => item * 2;
+    // You can pass more than one argument into arrow functions as well.
+    const myConcat = (arr1, arr2) => {
+        return arr1.concat(arr2);
+    };
+    // test your code
+    console.log(myConcat([1, 2], [3, 4, 5]));
+</script>
+</body>
+</html>
