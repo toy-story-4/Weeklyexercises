@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(document).on("keydown", function (f) {
+        if(f.keyCode == "71"){
+            $("body").css("background-image", "none");
+            $("body").css("background-color", "purple");
+        }
+    });
+
+    var theCounter = 0;
+    $(document).on("keydown", function (f){
+        if(f.keyCode == "13"){
+            theCounter ++
+            alert("You've hit enter " + theCounter + " times");
+        }
+    })
+    function onOneTwoThree(c) {
+        var input = '';
+        var key = '495051';
+        $(document).on('keydown', function (e) {
+            input += ("" + e.keyCode);
+            if (input === key) {
+                return c();
+            }
+            if (!key.indexOf(input)) return;
+            input = ("" + e.keyCode);
+        });
+    }
+
+    onOneTwoThree(function () {
+        alert("You get a 50% discount");
+    });
+
+</script>
+
+</body>
+</html>
